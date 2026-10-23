@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Files.css";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://phase7.onrender.com";
 
 function Files({ projects, token }) {
   const [selectedProject, setSelectedProject] = useState("");

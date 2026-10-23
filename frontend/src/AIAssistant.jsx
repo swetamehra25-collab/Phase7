@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import "./AIAssistant.css";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://phase7.onrender.com";
 
 function AIAssistant({ projects, token }) {
   const [mode, setMode] = useState("ask");

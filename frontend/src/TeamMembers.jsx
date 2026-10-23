@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./TeamMembers.css";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://phase7.onrender.com";
 
 function TeamMembers({ projects, token, userId }) {
   const [selectedProject, setSelectedProject] = useState("");

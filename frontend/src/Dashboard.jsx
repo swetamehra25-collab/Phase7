@@ -8,8 +8,7 @@ import Settings from "./Settings";
 import "./PublicSharing.css";
 
 
-const API_URL = "http://localhost:5000";
-
+const API_URL = "https://phase7.onrender.com";
 const initialActivity = [
   {
     icon: "N",

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Settings.css";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://phase7.onrender.com";
 
 function Settings({ user, token, onUserUpdate }) {
   const [name, setName] = useState(user?.name || "");

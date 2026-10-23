@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Auth.css";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://phase7.onrender.com";
 
 function Auth({ onAuthSuccess }) {
   const [mode, setMode] = useState("login");
