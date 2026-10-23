@@ -1,0 +1,37 @@
+ .public-page {
+  min-height: 100vh;
+  padding: 0 clamp(18px, 5vw, 70px);
+  background: radial-gradient(ellipse at 70% 0%, #252a1d 0%, transparent 45%), #10110f;
+  color: #f1f1ec;
+}
+.public-header, .public-footer {
+  display: flex; align-items: center; justify-content: space-between; gap: 15px;
+  padding: 23px 0; border-bottom: 1px solid #30312b;
+}
+.public-footer { border-top: 1px solid #30312b; border-bottom: 0; color: #77796f; font-size: 10px; }
+.public-brand { display: inline-flex; align-items: center; gap: 10px; color: #f1f1ec; font-family: "Space Grotesk", sans-serif; font-size: 17px; font-weight: 700; text-decoration: none; }
+.public-brand-mark { display: grid; width: 32px; height: 32px; place-items: center; border-radius: 9px; background: #c8f169; color: #181b11; }
+.public-badge { display: inline-flex; align-items: center; gap: 7px; padding: 8px 11px; border: 1px solid #41472f; border-radius: 7px; background: #252b1e; color: #d0f28b; font-size: 10px; }
+.public-badge span { width: 6px; height: 6px; border-radius: 50%; background: #c8f169; }
+.public-hero { max-width: 850px; margin: 0 auto; padding: clamp(55px, 9vw, 100px) 0 48px; }
+.public-eyebrow { color: #c8e894; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; }
+.public-hero h1 { margin: 17px 0 14px; font-family: "Space Grotesk", sans-serif; font-size: clamp(35px, 6vw, 58px); letter-spacing: -2px; overflow-wrap: anywhere; }
+.public-hero > p, .public-section-heading > p { max-width: 680px; margin: 0; color: #a1a396; font-size: 13px; line-height: 1.9; overflow-wrap: anywhere; }
+.public-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 15px; margin-top: 28px; color: #92938a; font-size: 11px; }
+.public-meta strong { color: #e5e6dd; }
+.public-note-count { padding: 6px 9px; border: 1px solid #37382f; border-radius: 6px; background: #1b1c17; }
+.public-notes-section { max-width: 850px; margin: 0 auto; padding: 27px 0 70px; border-top: 1px solid #30312b; }
+.public-section-heading { margin-bottom: 20px; }
+.public-section-heading h2 { margin: 10px 0 8px; font-family: "Space Grotesk", sans-serif; font-size: 25px; letter-spacing: -.7px; }
+.public-notes-list { display: grid; gap: 14px; margin-top: 18px; }
+.public-note-card { display: flex; align-items: flex-start; gap: 14px; min-width: 0; padding: 20px; border: 1px solid #30312b; border-radius: 11px; background: #191a16; }
+.public-note-icon, .public-symbol { display: grid; width: 38px; height: 38px; flex-shrink: 0; place-items: center; border: 1px solid #41472f; border-radius: 9px; background: #29311f; color: #d0f28b; }
+.public-note-body { min-width: 0; flex: 1; }
+.public-note-body h3 { margin: 2px 0 12px; font-family: "Space Grotesk", sans-serif; font-size: 15px; overflow-wrap: anywhere; }
+.public-note-body pre { margin: 0; padding: 13px; overflow: auto; border: 1px solid #30312b; border-radius: 7px; background: #11120f; color: #c7c8bd; font-family: "DM Sans", sans-serif; font-size: 11px; line-height: 1.8; white-space: pre-wrap; overflow-wrap: anywhere; }
+.public-state, .public-empty { max-width: 500px; margin: 70px auto; padding: 28px; border: 1px solid #30312b; border-radius: 12px; background: #191a16; text-align: center; }
+.public-state > p, .public-empty p { color: #92938a; font-size: 12px; line-height: 1.8; overflow-wrap: anywhere; }
+.public-error-state h1, .public-empty h3 { margin: 0 0 10px; font-family: "Space Grotesk", sans-serif; font-size: 23px; }
+.public-symbol { width: 43px; height: 43px; margin: 0 auto 15px; font-size: 20px; }
+.public-home-link { display: inline-flex; margin-top: 14px; padding: 11px 14px; border-radius: 8px; background: #c8f169; color: #181b11; font-size: 11px; font-weight: 700; text-decoration: none; }
+@media (max-width: 500px) { .public-note-card { padding: 13px; gap: 10px; } .public-footer { align-items: flex-start; flex-direction: column; } .public-hero { padding-top: 55px; } }

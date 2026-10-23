@@ -1,0 +1,243 @@
+.members-page {
+  display: grid;
+  gap: 22px;
+  color: #aab9ca;
+}
+
+.members-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.members-eyebrow {
+  border: 1px solid rgba(103, 232, 249, 0.18);
+  border-radius: 999px;
+  background: rgba(103, 232, 249, 0.06);
+  color: #bfeef7;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.members-heading h2 {
+  margin: 10px 0 7px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 29px;
+  letter-spacing: -1px;
+}
+
+.members-heading p {
+  margin: 0;
+  color: #8aa0b6;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.members-count,
+.member-badge {
+  padding: 7px 10px;
+  border: 1px solid rgba(148,163,184,0.14);
+  border-radius: 7px;
+  background: rgba(148,163,184,0.04);
+  color: #9aa9bd;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.members-panel,
+.members-list-panel {
+  padding: 22px;
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 12px;
+  background: rgba(13, 18, 27, 0.96);
+}
+
+.members-panel > label,
+.add-member-form > label {
+  display: block;
+  margin-bottom: 8px;
+  color: #8aa0b6;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.members-panel select,
+.member-form-row input {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid rgba(148,163,184,0.08);
+  border-radius: 8px;
+  outline: none;
+  background: rgba(0,0,0,0.25);
+  color: #edf5ff;
+  font-size: 12px;
+}
+
+.members-panel select {
+  height: 42px;
+}
+
+.add-member-form {
+  margin-top: 18px;
+}
+
+.member-form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.member-form-row button {
+  flex-shrink: 0;
+  padding: 0 14px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #8b5cf6 0%, #67e8f9 100%);
+  color: #0d1620;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.member-form-row button:hover:not(:disabled) {
+  filter: brightness(1.05);
+}
+
+.member-form-row button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.add-member-form small {
+  display: block;
+  margin-top: 9px;
+  color: #8aa0b6;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.members-error,
+.members-success {
+  margin: 14px 0 0;
+  padding: 10px 12px;
+  border: 1px solid;
+  border-radius: 8px;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.members-error {
+  border-color: rgba(103, 58, 63, 0.32);
+  background: rgba(40, 18, 20, 0.6);
+  color: #ffb5ac;
+}
+
+.members-success {
+  border-color: rgba(69, 86, 47, 0.32);
+  background: rgba(20, 32, 20, 0.6);
+  color: #d3f59a;
+}
+
+.members-list-panel h3 {
+  margin: 0 0 17px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 15px;
+}
+
+.members-list {
+  display: grid;
+}
+
+.member-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0;
+  border-top: 1px solid rgba(148,163,184,0.08);
+}
+
+.member-avatar {
+  display: grid;
+  width: 39px;
+  height: 39px;
+  flex-shrink: 0;
+  place-items: center;
+  border: 1px solid rgba(168,139,250,0.2);
+  border-radius: 11px;
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.12), rgba(103, 232, 249, 0.08));
+  color: #d8c8ff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.member-details {
+  display: grid;
+  min-width: 0;
+  flex: 1;
+  gap: 5px;
+}
+
+.member-details strong {
+  overflow-wrap: anywhere;
+  color: #edf5ff;
+  font-size: 11px;
+}
+
+.member-details span {
+  overflow-wrap: anywhere;
+  color: #9aa9bd;
+  font-size: 10px;
+}
+
+.members-empty {
+  color: #92938a;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.remove-member-button {
+  padding: 7px 10px;
+  border: 1px solid #59403a;
+  border-radius: 7px;
+  background: #2a201d;
+  color: #ffb5ac;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.remove-member-button:hover:not(:disabled) {
+  background: #3a2622;
+}
+
+.remove-member-button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+@media (max-width: 500px) {
+  .members-heading {
+    align-items: flex-start;
+  }
+
+  .members-heading h2 {
+    font-size: 24px;
+  }
+
+  .members-panel,
+  .members-list-panel {
+    padding: 16px;
+  }
+
+  .member-form-row {
+    flex-direction: column;
+  }
+
+  .member-form-row button {
+    min-height: 40px;
+  }
+
+  .member-badge {
+    padding: 6px;
+    font-size: 9px;
+  }
+}

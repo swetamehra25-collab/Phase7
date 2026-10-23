@@ -1,0 +1,351 @@
+
+.notes-page {
+  display: grid;
+  gap: 22px;
+  color: #aab9ca;
+}
+
+.notes-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.notes-eyebrow {
+  border: 1px solid rgba(103, 232, 249, 0.18);
+  border-radius: 999px;
+  background: rgba(103, 232, 249, 0.06);
+  color: #bfeef7;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.notes-heading h2 {
+  margin: 10px 0 7px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 29px;
+  letter-spacing: -1px;
+}
+
+.notes-heading p {
+  margin: 0;
+  color: #8aa0b6;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.notes-count {
+  padding: 7px 10px;
+  border: 1px solid rgba(148,163,184,0.14);
+  border-radius: 7px;
+  background: rgba(148,163,184,0.04);
+  color: #9aa9bd;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.notes-panel,
+.notes-list-panel,
+.note-card {
+  padding: 22px;
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 12px;
+  background: rgba(13, 18, 27, 0.96);
+}
+
+.notes-panel label,
+.note-create-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #8aa0b6;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.notes-panel select,
+.note-create-form input,
+.note-create-form textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid rgba(148,163,184,0.08);
+  border-radius: 8px;
+  outline: none;
+  background: rgba(0,0,0,0.25);
+  color: #eeeeE7;
+  font-size: 12px;
+}
+
+.notes-panel select {
+  height: 42px;
+}
+
+.note-create-form {
+  display: grid;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.note-create-form h3,
+.notes-list-heading h3 {
+  margin: 0 0 6px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 15px;
+}
+
+.note-create-form textarea {
+  min-height: 125px;
+  resize: vertical;
+  line-height: 1.7;
+}
+
+.notes-panel select:focus,
+.note-create-form input:focus,
+.note-create-form textarea:focus {
+  border-color: rgba(103, 232, 249, 0.32);
+}
+
+.note-create-form input::placeholder,
+.note-create-form textarea::placeholder {
+  color: #73746b;
+}
+
+.notes-primary-button {
+  justify-self: start;
+  min-height: 38px;
+  padding: 0 14px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #8b5cf6 0%, #67e8f9 100%);
+  color: #181b11;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.notes-primary-button:hover:not(:disabled) {
+  filter: brightness(1.05);
+}
+
+.notes-primary-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.notes-feedback {
+  padding: 11px 13px;
+  border: 1px solid;
+  border-radius: 8px;
+  font-size: 11px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.notes-error {
+  border-color: #673a38;
+  background: #2b1c1b;
+  color: #ffb5ac;
+}
+
+.notes-success {
+  border-color: #46562f;
+  background: #232c1b;
+  color: #d3f59a;
+}
+
+.notes-list-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.notes-list-heading span {
+  color: #8aa0b6;
+  font-size: 10px;
+}
+
+.notes-list {
+  display: grid;
+  gap: 14px;
+}
+
+.note-card {
+  min-width: 0;
+}
+
+.note-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.note-card-header h3 {
+  margin: 0 0 7px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 15px;
+  overflow-wrap: anywhere;
+}
+
+.note-card-header span {
+  color: #8f9086;
+  font-size: 10px;
+}
+
+.notes-delete-button {
+  flex-shrink: 0;
+  padding: 6px 9px;
+  border: 1px solid #59403a;
+  border-radius: 7px;
+  background: #2a201d;
+  color: #ffb5ac;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.notes-delete-button:hover {
+  background: #3a2622;
+}
+
+.note-content {
+  margin: 16px 0;
+  padding: 14px;
+  overflow: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  border: 1px solid rgba(148,163,184,0.12);
+  border-radius: 8px;
+  background: rgba(0,0,0,0.25);
+  color: #e1e2d8;
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.note-ai-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.note-ai-actions button {
+  min-height: 35px;
+  padding: 0 11px;
+  border: 1px solid #41472f;
+  border-radius: 8px;
+  background: #252b1e;
+  color: #d0f28b;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.note-ai-actions button:hover:not(:disabled) {
+  background: #303a23;
+}
+
+.note-ai-actions button:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+.note-ai-result {
+  margin-top: 17px;
+  padding-top: 15px;
+  border-top: 1px solid #32332c;
+}
+
+.note-ai-result-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: #d0f28b;
+  font-size: 11px;
+}
+
+.note-ai-result-header button {
+  border: none;
+  background: transparent;
+  color: #92938a;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.notes-empty {
+  padding: 25px 15px;
+  border: 1px dashed #393a32;
+  border-radius: 10px;
+  color: #92938a;
+  font-size: 11px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .notes-heading h2 {
+    font-size: 24px;
+  }
+
+  .notes-panel,
+  .notes-list-panel,
+  .note-card {
+    padding: 15px;
+  }
+
+  .notes-list-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .note-ai-actions {
+    flex-direction: column;
+  }
+
+  .note-ai-actions button {
+    width: 100%;
+  }
+}
+
+
+.note-edit-form {
+  display: grid;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.note-edit-form label {
+  color: #d6d7cd;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.note-edit-form input,
+.note-edit-form textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #36372f;
+  border-radius: 8px;
+  outline: none;
+  background: #11120f;
+  color: #eeeeE7;
+  font: inherit;
+  font-size: 12px;
+}
+
+.note-edit-form input:focus,
+.note-edit-form textarea:focus {
+  border-color: #a5c95e;
+}
+
+.note-edit-form textarea {
+  resize: vertical;
+  line-height: 1.7;
+}
+
+.note-edit-form .note-ai-actions button {
+  min-height: 35px;
+  padding: 0 12px;
+}
+

@@ -1,0 +1,110 @@
+
+.ai-tool-form,
+.ai-result-panel {
+  display: grid;
+  gap: 12px;
+  padding: 20px;
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 12px;
+  background: rgba(13, 18, 27, 0.96);
+}
+
+.ai-tool-form label {
+  color: #8aa0b6;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.ai-tool-form input,
+.ai-tool-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(148,163,184,0.08);
+  border-radius: 8px;
+  outline: none;
+  background: rgba(0,0,0,0.25);
+  color: #edf5ff;
+  font: inherit;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.ai-tool-form input:focus,
+.ai-tool-form textarea:focus {
+  border-color: rgba(103, 232, 249, 0.32);
+}
+
+.ai-tool-form textarea {
+  resize: vertical;
+}
+
+.ai-tool-form select {
+  width: 100%;
+  min-height: 40px;
+  padding: 9px 12px;
+  border: 1px solid rgba(148,163,184,0.08);
+  border-radius: 8px;
+  background: rgba(0,0,0,0.25);
+  color: #edf5ff;
+}
+
+.ai-tool-submit {
+  justify-self: start;
+  min-height: 39px;
+  padding: 0 15px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #8b5cf6 0%, #67e8f9 100%);
+  color: #0d1620;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ai-tool-submit:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.ai-result-panel {
+  min-width: 0;
+}
+
+.ai-result-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ai-result-heading h3 {
+  margin: 7px 0 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 15px;
+}
+
+.ai-result-heading button {
+  padding: 8px 10px;
+  border: 1px solid rgba(148,163,184,0.08);
+  border-radius: 7px;
+  background: rgba(148,163,184,0.04);
+  color: #8fe7e4;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.ai-result-content {
+  max-width: 100%;
+  margin: 0;
+  padding: 15px;
+  overflow: auto;
+  border: 1px solid rgba(148,163,184,0.12);
+  border-radius: 8px;
+  background: rgba(0,0,0,0.25);
+  color: #e1e2d8;
+  font: inherit;
+  font-size: 12px;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
